@@ -2,9 +2,26 @@
   "name": "find-using",
   "version": "1.0.0",
   "description": "Find modules depending on a module",
-  "main": "index.js",
+  "main": "src/index.js",
+  "bin": {
+    "find-uses-of": "./src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mieky/find-uses-of.git"
+  },
+  "homepage": "https://github.com/mieky/find-uses-of",
+  "keywords": [
+    "module",
+    "dependencies",
+    "find",
+    "usage",
+    "walk",
+    "recursively"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha",
+    "eslint": "eslint --ext .js ./src ./test"
   },
   "author": "Mike Arvela <mike@arvela.net>",
   "license": "MIT",
@@ -17,7 +34,8 @@
     "eslint-config-airbnb": "^11.1.0",
     "eslint-plugin-import": "^1.15.0",
     "eslint-plugin-jsx-a11y": "^2.2.2",
-    "eslint-plugin-react": "^6.2.2"
+    "eslint-plugin-react": "^6.2.2",
+    "mocha": "^3.0.2"
   },
   "eslintConfig": {
     "extends": "eslint-config-airbnb"
