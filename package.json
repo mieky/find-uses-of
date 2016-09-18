@@ -24,7 +24,8 @@
   },
   "scripts": {
     "test": "jest",
-    "eslint": "eslint --ext .js ./src ./test"
+    "eslint": "eslint --ext .js ./src ./test",
+    "ci": "npm run eslint && npm run test"
   },
   "author": "Mike Arvela <mike@arvela.net>",
   "license": "MIT",
