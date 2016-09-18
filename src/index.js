@@ -16,7 +16,6 @@ if (process.argv.length < 3) {
 const needle = process.argv[2];
 console.log(`Finding packages depending on ${needle}...`);
 
-walker.findSubdirsWithPackageJson(null, process.cwd())
-  .filter(location => walker.isNeedleInHaystack(location, needle))
+walker.findUsesInPath(process.cwd(), needle)
   .then(locations => locations.forEach(l => console.log(l)))
   .catch(err => console.log(err));

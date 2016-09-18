@@ -20,7 +20,7 @@
     "recursively"
   ],
   "scripts": {
-    "test": "mocha",
+    "test": "jest",
     "eslint": "eslint --ext .js ./src ./test"
   },
   "author": "Mike Arvela <mike@arvela.net>",
@@ -35,9 +35,12 @@
     "eslint-plugin-import": "^1.15.0",
     "eslint-plugin-jsx-a11y": "^2.2.2",
     "eslint-plugin-react": "^6.2.2",
-    "mocha": "^3.0.2"
+    "jest": "^15.1.1"
   },
   "eslintConfig": {
-    "extends": "eslint-config-airbnb"
+    "extends": "eslint-config-airbnb",
+    "env": {
+      "jest": true
+    }
   }
 }

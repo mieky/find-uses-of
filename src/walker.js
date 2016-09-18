@@ -35,7 +35,12 @@ function isNeedleInHaystack(haystackDir, needleName) {
   /* eslint-enable global-require */
 }
 
+function findUsesInPath(haystackDir, needle) {
+  return findSubdirsWithPackageJson(null, haystackDir)
+    .filter(location => isNeedleInHaystack(location, needle))
+    .map(location => path.relative(haystackDir, location));
+}
+
 module.exports = {
-  findSubdirsWithPackageJson,
-  isNeedleInHaystack,
+  findUsesInPath,
 };

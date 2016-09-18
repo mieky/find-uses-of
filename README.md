@@ -16,6 +16,7 @@ Starting from the current working directory, finds Node modules that have a give
 
 Only walks the directory tree up to the first package.json, then moves to the next directory.
 
+
 ## Install
 
     $ npm install -g find-uses-of
@@ -26,6 +27,7 @@ Tested on Node 6.6.0 and Node 4.0.
 ## Acknowledgements
 
 This project is a grateful recipient of the [Futurice Open Source sponsorship program](http://futurice.com/blog/sponsoring-free-time-open-source-activities).
+
 
 ## License
 
