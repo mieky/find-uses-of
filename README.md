@@ -17,12 +17,24 @@ Starting from the current working directory, finds Node modules that have a give
 Only walks the directory tree up to the first package.json, then moves to the next directory.
 
 
-## Install
+## Installation
 
     $ npm install -g find-uses-of
 
 **Requires Node 6** for its ES6 syntax support (spread, generators). Tested on Node v6.6.0.
 
+
+### Using as a module
+
+    $ npm install --save find-uses-of
+
+To use in your application:
+
+    const finder = require('find-uses-of');
+
+    finder.findUsesInPath(process.cwd(), "eslint")
+      .then(locations => locations.forEach(l => console.log(l)))
+      .catch(err => console.log(err));
 
 ## Acknowledgements
 

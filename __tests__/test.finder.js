@@ -1,9 +1,9 @@
 const path = require('path');
-const walker = require('../src/walker');
+const finder = require('../src/finder');
 
 test('finds root-level occurrences of "needle"', () => {
   const testPath = path.resolve(process.cwd(), '__tests__');
-  return walker.findUsesInPath(testPath, 'needle')
+  return finder.findUsesInPath(testPath, 'needle')
     .then((dirs) => {
       expect(dirs).toEqual([
         'test-dirs/dir1',
