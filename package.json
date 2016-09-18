@@ -1,6 +1,6 @@
 {
-  "name": "find-using",
-  "version": "1.0.1",
+  "name": "find-uses-of",
+  "version": "1.0.2",
   "description": "Find modules depending on a module",
   "main": "src/index.js",
   "bin": {
