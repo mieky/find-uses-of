@@ -1,5 +1,7 @@
 # find-uses-of
 
+[![npm version](https://badge.fury.io/js/find-uses-of.svg)](http://badge.fury.io/js/find-uses-of) [![Build Status](https://travis-ci.org/mieky/find-uses-of.svg?branch=master)](https://travis-ci.org/mieky/find-uses-of)
+
 Find uses of a Node module inside subdirectories.
 ```bash
     ~/dev > find-uses-of eslint
