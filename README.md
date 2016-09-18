@@ -2,14 +2,14 @@
 
 Find uses of a Node module inside subdirectories.
 ```bash
-    ~/dev >>> find-uses-of eslint
+    ~/dev > find-uses-of eslint
     Finding packages depending on eslint...
-    /Users/marv/dev/benson
-    /Users/marv/dev/find-uses-of
-    /Users/marv/dev/jestas
-    /Users/marv/dev/wappuapp-backend
-    /Users/marv/dev/wappuapp-client
-    /Users/marv/dev/yet-another-redux-example
+    benson
+    find-uses-of
+    jestas
+    wappuapp-backend
+    wappuapp-client
+    yet-another-redux-example
 ```
 
 Starting from the current working directory, finds Node modules that have a given module as either a "dependency" or "devDependency" in their package.json.
@@ -21,7 +21,7 @@ Only walks the directory tree up to the first package.json, then moves to the ne
 
     $ npm install -g find-uses-of
 
-Tested on Node 6.6.0 and Node 4.0.
+**Requires Node 6** for its ES6 syntax support (spread, generators). Tested on Node v6.6.0.
 
 
 ## Acknowledgements
